@@ -2,8 +2,6 @@
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-This message is here after another git push.
-
 ## Commands
 
 * `mkdocs new [dir-name]` - Create a new project.
