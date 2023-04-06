@@ -1,0 +1,29 @@
+name: CI-CD
+
+on:
+  push:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+jobs:
+  build_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Build and Deploy Mkdocs
+        env:
+          PET_IP: ${{ secrets.PET_IP }}
+          PET_SSH_PRIVATE_KEY: ${{ secrets.PET_SSH_PRIVATE_KEY }}
+          PET_SSH_USER: ${{ secrets.PET_SSH_USER }}
+          PET_WEBSITE_PATH: ${{ secrets.PET_WEBSITE_PATH }}
+        run: |
+            pip3 install mkdocs mkdocs-material
+            mkdocs build
+            zip -rq mkdocs.zip site
+            echo "$PET_SSH_PRIVATE_KEY" > key
+            chmod 600 key
+            ssh -i key -o StrictHostKeyChecking=no $PET_SSH_USER@$PET_IP 'rm -rf web/*'
+            scp -i key -o StrictHostKeyChecking=no mkdocs.zip $PET_SSH_USER@$PET_IP:$PET_WEBSITE_PATH
+            ssh -i key -o StrictHostKeyChecking=no $PET_SSH_USER@$PET_IP 'cd web && unzip -q mkdocs.zip && rm mkdocs.zip'

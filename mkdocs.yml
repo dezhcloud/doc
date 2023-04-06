@@ -1,0 +1,4 @@
+site_name: Dezh API
+theme:
+  name: material
+  custom_dir: 'yb_theme/'

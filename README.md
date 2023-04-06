@@ -1,2 +1,0 @@
-# doc
-dezh board documentation
