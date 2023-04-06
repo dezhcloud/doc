@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "dana";
+  src: url("/assets/fonts/dana/dana-regular.woff2");
+}
+
+:root {
+  /* COLORS */
+  --md-primary-fg-color: #19e490;
+  --md-primary-fg-color--light: #d1fbe0;
+  --md-primary-fg-color--dark: #639f7c;
+  --md-accent-fg-color: #005168;
+
+  /* FONTS */
+  --md-text-font: "dana";
+}

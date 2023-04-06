@@ -1,4 +1,9 @@
 site_name: Dezh API
 theme:
   name: material
-  custom_dir: 'yb_theme/'
+  custom_dir: "yb_theme/"
+  language: fa
+  logo: /assets/images/yottab-logo-white.png
+  favicon: /assets/images/favicon.ico
+
+extra_css: [/assets/stylesheets/extra.css]
