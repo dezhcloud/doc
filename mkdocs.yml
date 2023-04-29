@@ -1,5 +1,24 @@
 site_name: Dezh API
 theme:
+  palette:
+    - scheme: default
+      primary: green
+      accent: green
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    - scheme: slate
+      primary: green
+      accent: green
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  features:
+    - navigation.expand
+    - navigation.path
+
   name: material
   custom_dir: "yb_theme/"
   language: fa
@@ -7,3 +26,12 @@ theme:
   favicon: /assets/images/favicon.ico
 
 extra_css: [/assets/stylesheets/extra.css]
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/mastodon
+      link: https://fosstodon.org/@squidfunk
+      name: squidfunk on Fosstodo
+
+copyright: Copyright &copy; 2018 - 2023 Yottab
