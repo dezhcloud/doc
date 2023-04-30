@@ -1,4 +1,5 @@
 site_name: Dezh API
+site_url: https://dezh.cloud/doc
 theme:
   palette:
     - scheme: default
@@ -22,10 +23,10 @@ theme:
   name: material
   custom_dir: "yb_theme/"
   language: fa
-  logo: /assets/images/yottab-logo-white.png
-  favicon: /assets/images/favicon.ico
+  logo: /doc/assets/images/yottab-logo-white.png
+  favicon: /doc/assets/images/favicon.ico
 
-extra_css: [/assets/stylesheets/extra.css]
+extra_css: [/doc/assets/stylesheets/extra.css]
 
 extra:
   generator: false

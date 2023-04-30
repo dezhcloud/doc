@@ -2,7 +2,7 @@
 
 نحوه خواندن درخواست قبل از ارسال آن
 
-<p align="center"><img src="/assets/img/buffering.png"></p>
+<p align="center"><img src="/doc/assets/img/buffering.png"></p>
 
 میان‌افزار Buffering اندازه درخواست‌هایی را که می‌توان به سرویس‌ها ارسال کرد، محدود می‌کند.
 

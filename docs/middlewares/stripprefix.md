@@ -2,7 +2,7 @@
 
 این میان افزار پیشوند مسیر تطبیق را از بین می برد و آن را در یک هدر `X-Forwarded-Prefix` ذخیره می کند. اگر باطن شما به `مسیر اصلی (/)` گوش می دهد اما باید روی یک پیشوند خاص در معرض دید قرار گیرد، از یک میان افزار `Strip Prefix` استفاده کنید. .
 
-<p align="center"><img src="/assets/img/stripprefix.png"></p>
+<p align="center"><img src="/doc/assets/img/stripprefix.png"></p>
 
 ## Prefixes
 

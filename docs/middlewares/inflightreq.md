@@ -2,7 +2,7 @@
 
 محدود کردن تعداد درخواست‌های همزمان در حال پردازش
 
-<p align="center"><img src="/assets/img/inflightreq.png"></p>
+<p align="center"><img src="/doc/assets/img/inflightreq.png"></p>
 
 برای جلوگیری از غرق شدن سرویس‌ها با بار زیاد، تعداد درخواست‌های مجاز همزمان در حال پردازش می‌تواند محدود شود.
 
