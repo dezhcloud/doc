@@ -1,5 +1,6 @@
 site_name: Dezh API
 site_url: https://dezh.cloud/doc
+site_dir: doc
 theme:
   palette:
     - scheme: default

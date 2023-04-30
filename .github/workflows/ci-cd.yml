@@ -14,16 +14,15 @@ jobs:
 
       - name: Build and Deploy Mkdocs
         env:
-          PET_IP: ${{ secrets.PET_IP }}
-          PET_SSH_PRIVATE_KEY: ${{ secrets.PET_SSH_PRIVATE_KEY }}
-          PET_SSH_USER: ${{ secrets.PET_SSH_USER }}
-          PET_WEBSITE_PATH: ${{ secrets.PET_WEBSITE_PATH }}
+          DOC_DEPLOY_IP: ${{ secrets.DOC_DEPLOY_IP }}
+          DOC_DEPLOY_SSH_PRIVATE_KEY: ${{ secrets.DOC_DEPLOY_SSH_PRIVATE_KEY }}
+          DOC_DEPLOY_USER: ${{ secrets.DOC_DEPLOY_USER }}
         run: |
             pip3 install mkdocs mkdocs-material
             mkdocs build
-            zip -rq mkdocs.zip site
-            echo "$PET_SSH_PRIVATE_KEY" > key
+            zip -rq mkdocs.zip doc
+            echo "$DOC_DEPLOY_SSH_PRIVATE_KEY" > key
             chmod 600 key
-            ssh -i key -o StrictHostKeyChecking=no $PET_SSH_USER@$PET_IP 'rm -rf web/*'
-            scp -i key -o StrictHostKeyChecking=no mkdocs.zip $PET_SSH_USER@$PET_IP:$PET_WEBSITE_PATH
-            ssh -i key -o StrictHostKeyChecking=no $PET_SSH_USER@$PET_IP 'cd web && unzip -q mkdocs.zip && rm mkdocs.zip'
+            ssh -i key -o StrictHostKeyChecking=no $DOC_DEPLOY_USER@$DOC_DEPLOY_IP 'rm -rf /opt/landing-docker/docs/files/*'
+            scp -i key -o StrictHostKeyChecking=no mkdocs.zip $DOC_DEPLOY_USER@$DOC_DEPLOY_IP:/opt/landing-docker/docs/files/
+            ssh -i key -o StrictHostKeyChecking=no $DOC_DEPLOY_USER@$DOC_DEPLOY_IP 'cd /opt/landing-docker/docs/files && unzip -q mkdocs.zip && rm mkdocs.zip'
