@@ -1,6 +1,6 @@
 # Basic Auth
 
-<p align="center"><img src="/doc/assets/img/basicauth.png" /></p>
+<p align="center"><img src="/doc/assets/img/middlewares/basicauth.png" /></p>
 
 میان افزار BasicAuth دسترسی به خدمات شما را برای کاربران شناخته شده محدود می کند.
 

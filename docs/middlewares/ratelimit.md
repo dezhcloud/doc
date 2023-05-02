@@ -2,7 +2,7 @@
 
 میان‌افزار RateLimit تضمین می‌کند که سرویس‌ها مقدار مناسبی از درخواست‌ها را دریافت می‌کنند و به فرد اجازه می‌دهد تعریف کند که منصفانه چیست.
 
-<p align="cemter"><img src="/doc/assets/img/ratelimit.png"></p>
+<p align="cemter"><img src="/doc/assets/img/middlewares/ratelimit.png"></p>
 
 ## Average
 

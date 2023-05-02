@@ -4,7 +4,7 @@
 
 میان افزار Compress از فشرده سازی `gzip` استفاده می کند.
 
-<p align="center"><img src="/doc/assets/img/compress.png" /></p>
+<p align="center"><img src="/doc/assets/img/middlewares/compress.png" /></p>
 
 ## Min Response Body Bytes
 

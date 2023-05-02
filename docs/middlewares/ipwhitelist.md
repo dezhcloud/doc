@@ -2,7 +2,7 @@
 
 محدود کردن مشتریان به IP های خاص
 
-<p align="center"><img src="/doc/assets/img/ipwhitelist.png"></p>
+<p align="center"><img src="/doc/assets/img/middlewares/ipwhitelist.png"></p>
 
 IPWhitelist درخواست ها را بر اساس IP مشتری می پذیرد / رد می کند.
 
