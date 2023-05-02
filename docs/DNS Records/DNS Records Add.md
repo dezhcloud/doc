@@ -61,6 +61,17 @@
 
 ثبت رکورد MX با استفاده از API:
 
+``` yaml
+curl --location --request POST 'https://napi.arvancloud.ir/cdn/4.0/domains/example.com/dns-records' \
+--header 'authority: napi.arvancloud.ir' \
+--header 'accept: application/json, text/plain, */*' \
+--header 'authorization: APIKEY 1 2 3 4' \
+--header 'cache-control: no-cache' \
+--header 'content-type: application/json;charset=UTF-8' \
+--header 'pragma: no-cache' \
+--data-raw '{"type":"MX","name":"@","cloud":true,"value":{"host":"mail.example.com","priority":"10"},"upstream_https":"default","ip_filter_mode":{"count":"single","geo_filter":"none","order":"none"},"ttl":120}'
+```
+
 خروجی دستور dig رکورد MX:
 
 <p align="center"><img src="/docs/assets/img/dns_records_add/digmx.png"></p>
