@@ -6,15 +6,15 @@
 
 اگر از cPanel استفاده می‌کنید، برای دریافت تمام رکوردهای DNS سایت خود، به پنل مدیریتی cPanel رفته و روی گزینه‌ی Zone Editor کلیک کنید.
 
-<p align="center"><img src="/assets/img/dns_records/Cpanel1.png"></p>
+<p align="center"><img src="/doc/assets/img/dns_records/Cpanel1.png"></p>
 
 در گام بعد، اگر بیش از یک دامنه‌ی ثبت شده در cPanel دارید، در بخش Domain، نام دامنه‌ی خود را وارد کنید.
 
-<p align="center"><img src="/assets/img/dns_records/Cpanel2.png"></p>
+<p align="center"><img src="/doc/assets/img/dns_records/Cpanel2.png"></p>
 
 پس از یافتن دامنه، فیلتر را روی All قرار دهید تا تمام رکوردهای آن نمایش داده شود.
 
-<p align="center"><img src="/assets/img/dns_records/Cpanel3.png"></p>
+<p align="center"><img src="/doc/assets/img/dns_records/Cpanel3.png"></p>
 
 هر رکوردی در این بخش برای دامنه‌ی شما نمایش داده شود باید در پنل کاربری ابر دژ، بخش CDN و رکوردهای DNS نیز تعریف شود.
 
@@ -22,11 +22,11 @@
 
 اگر از DirectAdmin استفاده می‌کنید، برای دریافت تمام رکوردهای DNS سایت خود، به پنل مدیریتی DirectAdmin رفته و روی گزینه‌ی DNS Management کلیک کنید.
 
-<p align="center"><img src="/assets/img/dns_records/directadmin1.jpg"></p>
+<p align="center"><img src="/doc/assets/img/dns_records/directadmin1.jpg"></p>
 
 در صفحه‌ی جدید باز شده تمام رکوردهای DNS دامنه‌ی شما نمایش داده می‌شود.
 
-<p align="center"><img src="/assets/img/dns_records/directadmin2.jpg"></p>
+<p align="center"><img src="/doc/assets/img/dns_records/directadmin2.jpg"></p>
 
 هر رکوردی در این بخش برای دامنه‌ی شما نمایش داده شود باید در پنل کاربری ابر دژ، بخش CDN و رکوردهای DNS نیز تعریف شود.
 
@@ -59,11 +59,11 @@
 
 برای بارگذاری DNS Zone file در پنل کاربری به بخش شبکه‌ توزیع محتوا (CDN) رفته و از منوی سمت راست روی گزینه‌ی رکوردهای DNS کلیک کنید.
 
-<p align="center"><img src="/assets/img/dns_records/zone1.png"></p>
+<p align="center"><img src="/doc/assets/img/dns_records/zone1.png"></p>
 
 در پنجره‌ی باز شده، روی گزینه‌ی وارد کردن DNS کلیک کنید. با کلیک روی این گزینه، پنجره‌ای برای شما باز می‌شود که به کمک آن می‌توانید فایل DNS Zone دامنه‌ را که پیش‌تر در کامپیوتر خود ذخیره کرده‌اید، انتخاب کنید.
 
-<p align="center"><img src="/assets/img/dns_records/zone2.png"></p>
+<p align="center"><img src="/doc/assets/img/dns_records/zone2.png"></p>
 
 
 در این پنجره، فایل خود را از مسیری که آن را در آن‌جا ذخیره کرده‌اید، پیدا و انتخاب کنید. نهایتن پس از انتخاب فایل، روی گزینه‌ی Open کلیک کنید. به‌این‌ترتیب، فایل DNS Zone دامنه‌، بارگذاری و رکوردهای DNS دامنه‌ی شما به پنل کاربری ابر دژ اضافه می‌شوند.
