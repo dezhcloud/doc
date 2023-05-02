@@ -10,7 +10,7 @@
 
 <p align="center"><img src="/doc/assets/img/dns_records_add/a.png"></p>
 
-'عنوان:' در این بخش نام دامنه‌ یا زیردامنه‌ی سایت شما قرار می‌گیرد. استفاده از کاراکتر @ در این بخش، به معنای اشاره به دامنه‌ی اصلی شماست. نام دامنه‌ای که در این بخش وارد می‌شود باید به‌شکل زیر باشد:
+**عنوان:** در این بخش نام دامنه‌ یا زیردامنه‌ی سایت شما قرار می‌گیرد. استفاده از کاراکتر @ در این بخش، به معنای اشاره به دامنه‌ی اصلی شماست. نام دامنه‌ای که در این بخش وارد می‌شود باید به‌شکل زیر باشد:
 
 
 - نام دامنه حتمن با یک حرف یا عدد آغاز شود نه یک کاراکتر خاص (مانند #، $ یا ...).
@@ -18,10 +18,10 @@
 - در نام دامنه نمی‌توان از کاراکترهای خاص (مانند @، $ یا ...) استفاده کرد.
 - نام یک دامنه نهایتن می‌تواند تا 63 کاراکتر باشد.
 
-'مقدار:' در این بخش آدرس IP سرور اصلی میزبان سایت شما قرار می‌گیرد.
+**مقدار:** در این بخش آدرس IP سرور اصلی میزبان سایت شما قرار می‌گیرد.
 
 
-'مدت‌ زمان اعتبار:' مشخص‌کننده‌ی مدت‌زمانی است که این رکورد می‌تواند در سرورهای‌ ابر آروان Cache (ذخیره) شود. به‌شکل پیش‌فرض این مقدار 2 دقیقه است؛ به این معنی که اگر تغییری در رکورد DNS ایجاد کنید ۲ دقیقه زمان می‌برد تا در همه‌ی نقاط تغییر کند.
+**مدت‌ زمان اعتبار:** مشخص‌کننده‌ی مدت‌زمانی است که این رکورد می‌تواند در سرورهای‌ ابر آروان Cache (ذخیره) شود. به‌شکل پیش‌فرض این مقدار 2 دقیقه است؛ به این معنی که اگر تغییری در رکورد DNS ایجاد کنید ۲ دقیقه زمان می‌برد تا در همه‌ی نقاط تغییر کند.
 
 اگر سرور اصلی میزبان سایت شما، دارای IPV6 باشد باید از رکورد AAAA استفاده کنید. تنظیم این رکورد در بخش مدیریت رکوردها به‌شکل زیر است:
 
@@ -74,7 +74,7 @@ curl --location --request POST 'https://napi.arvancloud.ir/cdn/4.0/domains/examp
 
 خروجی دستور dig رکورد MX:
 
-<p align="center"><img src="/docs/assets/img/dns_records_add/digmx.png"></p>
+<p align="center"><img src="/doc/assets/img/dns_records_add/digmx.png"></p>
 
 Bind Format رکورد ثبت‌شده:
 
@@ -86,7 +86,7 @@ example.com.            120     IN      MX      10 mail.example.com.
 
 رکورد SRV مشخص‌کننده‌ی هاست پشتیبانی‌کننده از یک سرویس خاص است. برای تعریف این رکورد در بخش «رکوردهای DNS»، نوع رکورد را SRV، عنوان را به شکل .service._proto.example.com_@ (برای مثال: .sip_tcp.example.com_@)، در بخش پورت، شماره پورتی که سرویس روی آن در حال اجراست و در بخش مقدار نیز رشته‌ای به فرم exampledomain.com وارد کنید. هم‌چنین اگر قصد تعریف چند رکورد SRV را دارید، می‌توانید از بخش‌های وزن و اولویت متناسب با نیاز خود استفاده کنید.
 
-<p align="center"><img src="/docs/assets/img/dns_records_add/srv.png"></p>
+<p align="center"><img src="/doc/assets/img/dns_records_add/srv.png"></p>
 
 رکورد SRV مشخص‌کننده‌ی اولویت و وزن سرورهایی است که در آن لیست شده‌اند. مقدار اولویت در یک رکورد SRV امکان اولویت دادن به یک سرور که از یک سرویس مشخص پشتیبانی می‌کند را نسبت به سایر سرورها فراهم می‌کند. سروری که مقدار اولویت پایین‌تری به آن تخصیص داده شده است، ترافیک بیش‌تری نسبت به دیگر سرورها دریافت می‌کند. از سوی دیگر، کارکرد وزن نیز تا اندازه‌ای مشابه است، زیرا در میان چند سرور با وزن یک‌سان، سروری که وزن بیش‌تری دارد، ترافیک بیش‌تری دریافت می‌کند.
 
@@ -99,7 +99,7 @@ example.com.            120     IN      MX      10 mail.example.com.
 - معرفی رکورد SPF و تنظیم آن در پنل کاربری ابر آروان
 
 - معرفی رکورد DKIM و تنظیم آن در پنل کاربری ابر آروان
-<p align="center"><img src="/docs/assets/img/dns_records_add/txt.png"></p>
+<p align="center"><img src="/doc/assets/img/dns_records_add/txt.png"></p>
 
 ## رکورد CAA
 
@@ -108,7 +108,7 @@ example.com.            120     IN      MX      10 mail.example.com.
 
 برای ثبت نمونه رکورد در پنل آروان پس از انتخاب دامنه از پنل کاربری، روی رکوردهای DNS کلیک و یک رکورد CAA جدید ایجاد کنید.
 
-<p align="center"><img src="/docs/assets/img/dns_records_add/caa.png"></p>
+<p align="center"><img src="/doc/assets/img/dns_records_add/caa.png"></p>
 
 - در قسمت عنوان نام دامنه‌ی مورد نظر خود را وارد کنید. اگر رکورد مربوط به ریشه‌ی دامنه است (root دامنه) باید در فیلد عنوان عبارت "@" وارد شود و اگر مربوط به زیر دامنه‌ی خاصی است باید فقط نام آن وارد شود.
 
@@ -132,7 +132,7 @@ curl --location --request POST 'https://napi.arvancloud.ir/cdn/4.0/domains/examp
 
 خروجی دستور dig رکورد CAA:
 
-<p align="center"><img src="/docs/assets/img/dns_records_add/digcaa.png"></p>
+<p align="center"><img src="/doc/assets/img/dns_records_add/digcaa.png"></p>
 
 نمونه ‌‌Bind فرمت دستور CAA:
 
@@ -153,7 +153,7 @@ example.com.      120   IN   CAA   0 issuewild "letsencrypt.org"
 
 بر اساس RFC 6698 این رکورد شامل 4 فیلد Matching Type ،Usage ،Selector و در نهایت گواهینامه‌ی درخواستی است، که ساختار آن Hexadecimal است. هم‌چنین در قسمت عنوان نیز ۳ مقدار پورت، پروتکل و هاست باید وارد شود.
 
-<p align="center"><img src="/docs/assets/img/dns_records_add/tlsa.png"></p>
+<p align="center"><img src="/doc/assets/img/dns_records_add/tlsa.png"></p>
 
 - عنوان: در قسمت عنوان ابتدا باید به شکل زیر مشخص کرد که گواهی‌نامه‌ برای چه موردی قابل استفاده است.
 
@@ -182,22 +182,22 @@ curl --location --request POST 'https://napi.arvancloud.ir/cdn/4.0/domains/examp
 
 وظیفه‌ی رکورد PTR یا Pointer Record گردآوری اطلاعات برای Reverse DNS است که در نهایت باعث تطبیق نام دامنه با IP آن می‌شود. هرچند که در ابتدا رکورد PTR برای جلوگیری از اسپم شدن ایمیل‌های ارسالی از IPهای مربوطه توسعه داده شد ولی امروزه با استفاده از SPF ،DKIM و DMARC تایید دامنه به‌شکل بهتری انجام می‌شود.
 
-<p align="center"><img src="/docs/assets/img/dns_records_add/reverse.png"></p>
+<p align="center"><img src="/doc/assets/img/dns_records_add/reverse.png"></p>
 
 
 اگر بخواهید که یک IP را در RIPE به نام خود ثبت کنید باید NS‌های RIPE را روی IP خود به‌شکل زیر ثبت کنید.
 
 - در ابتدا باید اوکتت چهارم IP خود را در قسمت عنوان رکورد ثبت کنید. ( در ساختار IP هر "." جدا کننده یک اوکتت است. برای مثال در IP 192.168.1.1 مقدار 192 بیانگر اوکتت اول، مقدار 168 برابر اوکتت دوم، 1 برابر اوکتت سوم و 1 آخر برابر اوکتت چهارم است.
 
-<p align="center"><img src="/docs/assets/img/dns_records_add/octet.png"></p>
+<p align="center"><img src="/doc/assets/img/dns_records_add/octet.png"></p>
 
 - در قسمت مقدار رکورد باید IP خود را به‌شکل <octet_3>.<octet_2>.<octet_1> ثبت کنید.
 
-<p align="center"><img src="/docs/assets/img/dns_records_add/record-ptr.png"></p>
+<p align="center"><img src="/doc/assets/img/dns_records_add/record-ptr.png"></p>
 
 شما می‌توانید با استفاده از دستور dig از صحت رکورد درخواستی و در دسترس بودن آن اطمینان حاصل کنید:
 
-<p align="center"><img src="/docs/assets/img/dns_records_add/ptr-dig.png"></p>
+<p align="center"><img src="/doc/assets/img/dns_records_add/ptr-dig.png"></p>
 
 اگر بخواهید رکورد بالا را از طریق API اضافه کنید باید درخواست خود را به‌شکل زیر ارسال کنید:
 
