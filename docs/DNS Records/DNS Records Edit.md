@@ -6,7 +6,7 @@
 
 برای رکوردهایی از نوع A،ویرایش دامنه شامل گزینه‌های بیش‌تری در مقایسه با سایر انواع رکورد‌ها است.
 
-<p align="center"><img src="/doc/assets/img/dns_records/edita.png"></p>
+<p align="center"><img src="/doc/assets/img/dns_records_edit/edita.png"></p>
 
 این گزینه‌ها عبارتند از:
 
@@ -18,7 +18,7 @@
 
 - نشانی IP: مقادیر آدرس‌های IP هستند که به سرورهای اصلی دامنه اشاره دارند. اگر برای یک رکورد A در این بخش، بیش از یک آدرس تعریف شود، در قسمت انتهایی قابلیت لود بالانس برای دامنه فعال می‌شود که در ادامه قابل مشاهده است.
 
-<p align="center"><img src="/doc/assets/img/dns_records/edit2.png"></p>
+<p align="center"><img src="/doc/assets/img/dns_records_edit/edit2.png"></p>
 
 - نوع پاسخ: در این بخش می‌توان نوع پاسخ را تکی/چندتایی تعیین کرد. این بخش مشخص‌کننده‌ی آن است که در پاسخ به هر درخواست DNS، تنها یکی از رکوردها به عنوان پاسخ برای درخواست‌کننده ارسال شود یا همه‌ی‌ آن‌ها.
 
@@ -28,7 +28,7 @@
 
 اگر گزینه‌ی نوبتی با وزن انتخاب شود، ستونی به اسم وزن در کنار نشانی IP ایجاد می‌شود که مشخص ‌کننده‌ی وزن IP مربوطه در توزیع بار است.
 
-<p align="center"><img src="/doc/assets/img/dns_records/weight.png"></p>
+<p align="center"><img src="/doc/assets/img/dns_records_edit/weight.png"></p>
 
 برای نمونه، اگر مشابه تصویر بالا وزن یکی از رکوردها ۱ و وزن دیگری ۱۰۰ باشد، از هر ۱۰۱ درخواست، یکی پاسخ IP اول را دریافت می‌کند و ۱۰۰ درخواست دیگر IP دوم را.
 
@@ -40,7 +40,7 @@
 
 
 
-<p align="center"><img src="/doc/assets/img/dns_records/cloud.png"></p>
+<p align="center"><img src="/doc/assets/img/dns_records_edit/cloud.png"></p>
 
 در این حالت با انتخاب وزن مناسب می‌توانید توزیع بار را برای ترافیک لایه‌ی 7 شبکه (HTTP/HTTPS) میان سرورهای خود انجام دهید. نوع پروتکل ارتباطی با سرور اصلی را نیز می‌توانید در قسمت پروتکل تعیین کنید.
 
@@ -75,14 +75,14 @@
 | `2086`        | WHM           |
 | `8085`        | Webmail       |
 
-<p align="center"><img src="/doc/assets/img/dns_records/protocol.png"></p>
+<p align="center"><img src="/doc/assets/img/dns_records_edit/protocol.png"></p>
 
 ## حذف رکوردهای DNS
 
 اگر بنا به هر دلیلی قصد دارید تا یکی از رکوردهای دامنه‌ی خود را حذف کنید، در پنل کاربری ابر آروان به محصول CDN، بخش «رکوردهای DNS» بروید و روی آیکون حذف روبه‌روی رکورد موردنظر خود کلیک کنید.
 
-<p align="center"><img src="/doc/assets/img/dns_records/delete.png"></p>
+<p align="center"><img src="/doc/assets/img/dns_records_edit/delete.png"></p>
 
 سپس با کلیک روی گزینه‌ی حذف، رکورد مورد نظر حذف خواهد شد.
 
-<p align="center"><img src="/doc/assets/img/dns_records/deleteconfirm.png"></p>
+<p align="center"><img src="/doc/assets/img/dns_records_edit/deleteconfirm.png"></p>
