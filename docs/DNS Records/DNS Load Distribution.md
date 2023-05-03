@@ -20,7 +20,7 @@
 
 در آخر روی ذخیره کلیک کنید.‌
 
-<p align="center"><img src="/doc/assets/img/dns_load-distribution/record.png"></p>
+<p align="center"><img src="/doc/assets/img/dns_load_distribution/record.png"></p>
 
 برای ایجاد این رکورد به کمک API می‌توانید از درخواست زیر استفاده کنید:‌
 
