@@ -47,7 +47,7 @@
 
 <p align="center"><img src="/doc/assets/img/dns_records_add/ns.png"></p>
 
-> دقت داشته باشید که تنها در موارد خاص به تعریف این رکورد در بخش مدیریت رکوردهای پنل کاربری ابر آروان نیاز خواهید داشت.
+> دقت داشته باشید که تنها در موارد خاص به تعریف این رکورد در بخش مدیریت رکوردهای پنل کاربری ابر دژ نیاز خواهید داشت.
 
 ## رکورد MX
 
@@ -62,8 +62,8 @@
 ثبت رکورد  `MX` با استفاده از API:
 
 ``` yaml
-curl --location --request POST 'https://napi.arvancloud.ir/cdn/4.0/domains/example.com/dns-records' \
---header 'authority: napi.arvancloud.ir' \
+curl --location --request POST 'https://napi.dezhcloud.ir/cdn/4.0/domains/example.com/dns-records' \
+--header 'authority: napi.dezhcloud.ir' \
 --header 'accept: application/json, text/plain, */*' \
 --header 'authorization: APIKEY 1 2 3 4' \
 --header 'cache-control: no-cache' \
@@ -122,8 +122,8 @@ example.com.            120     IN       `MX`      10 mail.example.com.
 
 ساخت رکورد با استفاده از API:
 ``` yaml
-curl --location --request POST 'https://napi.arvancloud.ir/cdn/4.0/domains/example.com/dns-records' \
---header 'authority: napi.arvancloud.ir' \
+curl --location --request POST 'https://napi.dezhcloud.ir/cdn/4.0/domains/example.com/dns-records' \
+--header 'authority: napi.dezhcloud.ir' \
 --header 'accept: application/json, text/plain, */*' \
 --header 'authorization:  `API` KEY 1 2 3 4' \
 --header 'content-type: application/json;charset=UTF-8' \
