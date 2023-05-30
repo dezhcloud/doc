@@ -2,7 +2,7 @@
 
 زمانی که شما مقادیر NS دامنه‌ی خود را به مقادیر ارایه‌شده به‌وسیله‌ی دژ تغییر می‌دهید، سرویس  `DNS` دژ برای دامنه‌ی شما فعال می‌شود و باید تمام رکوردهای  `DNS` دامنه در پنل کاربری‌تان وارد شود تا توسط دژ Resolve و دامنه و تمام زیردامنه‌های شما بدون مشکل باز شود.
 
-برای این کار، ابتدا به بخش دامنه‌ها رفته و برای دامنه موردنظر روی لیست رکوردها کلیک کنید. سپس در پنجره باز شده افزودن رکورد را بزنید.
+برای این کار، ابتدا به بخش دامنه‌ها رفته و برای دامنه موردنظر روی لیست رکوردها کلیک کنید.
 
 <p align="center"><img src="/doc/assets/img/dns_records_add/15.png"></p>
 
@@ -108,15 +108,6 @@ example.com.            120     IN       `MX`      10 mail.example.com.
 
 - در قسمت `CA` نام `CA` مورد نظر خود را وارد کنید برای نمونه: (letsencrypt.org)
 
-ساخت رکورد با استفاده از API:
-``` yaml
-curl --location --request POST 'https://napi.dezhcloud.ir/cdn/4.0/domains/example.com/dns-records' \
---header 'authority: napi.dezhcloud.ir' \
---header 'accept: application/json, text/plain, */*' \
---header 'authorization:  `API` KEY 1 2 3 4' \
---header 'content-type: application/json;charset=UTF-8' \
---data-raw '{"type":"CAA","name":"@","cloud":true,"value":{"flag":0,"tag":"issuewild","value":"letsencrypt.org"},"upstream_https":"default","ip_filter_mode":{"count":"single","geo_filter":"none","order":"none"},"ttl":120}'
-```
 
 خروجی دستور `dig` رکورد CAA:
 
