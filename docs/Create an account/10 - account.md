@@ -20,4 +20,4 @@
 
 <p align="center"><img src="/doc/assets/img/Create_an_account/4.png"></p>
 
-> مرحله بعد [اضافه¬کردن وب¬سایت به پنل کاربری ابر دژ ](https://dezh.cloud/doc/Domain/domain/) است.
+> مرحله بعد [اضافه کردن وب‌سایت به پنل کاربری ابر دژ ](https://dezh.cloud/doc/Domain/domain/) است.
