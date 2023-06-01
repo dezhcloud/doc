@@ -11,7 +11,7 @@
 
 برای تغییر NSهای دامنه‌ی خود در پنل ایرنیک، کافی است به سایت ایرنیک بروید و از منوی «دامنه‌ها»، گزینه‌ی «دامنه‌های من» را انتخاب کنید.
 
-<p align="center"><img src="/doc/assets/img/domain_ns_change/nic1.png"></p>
+<p align="center"><img src="/doc/assets/img/domain_ns_change/nic1.jpg"></p>
 
 در گام بعد نام کاربری و رمز عبور خود را وارد کنید تا به پنل مدیریتی خود وارد شوید.
 
