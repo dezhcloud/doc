@@ -28,7 +28,9 @@
 
 **مدت‌ زمان اعتبار:** مشخص‌کننده‌ی مدت‌زمانی است که این رکورد می‌تواند در سرورهای‌ ابر دژ Cache (ذخیره) شود. به‌شکل پیش‌فرض این مقدار 600 ثانیه است؛ به این معنی که اگر تغییری در رکورد  `DNS` ایجاد کنید 10 دقیقه زمان می‌برد تا در همه‌ی نقاط تغییر کند.
 
-اگر سرور اصلی میزبان سایت شما، دارای  `IPV6` باشد باید از رکورد `AAAA` استفاده کنید. تنظیم این رکورد مانند رکورد A است:
+اگر سرور اصلی میزبان سایت شما، دارای  `IPV6` باشد باید از رکورد `AAAA` استفاده کنید. تنظیم این رکورد مانند رکورد A است.
+
+> برای فعال‌سازی سرویس CDN [اینجا](https://dezh.cloud/doc/DNS%20Records/20%20-%20DNS%20Records%20Cloud/) کلیک کنید.
 
 ## رکورد  `CNAME`
 
@@ -37,6 +39,8 @@
 <p align="center"><img src="/doc/assets/img/dns_records_add/18.png"></p>
 
 برای تعریف این رکورد، در بخش مقدار نام دامنه‌ای که درخواست‌های ارسالی کاربران باید به سمت آن فرستاده شوند را وارد کنید.
+
+> برای فعال‌سازی سرویس CDN [اینجا](https://dezh.cloud/doc/DNS%20Records/20%20-%20DNS%20Records%20Cloud/) کلیک کنید
 
 
 ## رکورد MX
@@ -48,19 +52,6 @@
 <p align="center"><img src="/doc/assets/img/dns_records_add/19.png"></p>
 
 برای تنظیم این رکورد، در بخش مقدار نام دامنه‌ای که سرویس ایمیل خود را از آن دریافت کرده‌اید، وارد کنید. اگر چند سرور ایمیل مختلف دارید می‌توانید چند رکورد  `MX` تعریف کرده و با استفاده از بخش اولویت، مشخص کنید که کدام ایمیل سرور، دارای اولویت بالاتری است.
-
-ثبت رکورد  `MX` با استفاده از API:
-
-``` yaml
-curl --location --request POST 'https://napi.dezhcloud.ir/cdn/4.0/domains/example.com/dns-records' \
---header 'authority: napi.dezhcloud.ir' \
---header 'accept: application/json, text/plain, */*' \
---header 'authorization: APIKEY 1 2 3 4' \
---header 'cache-control: no-cache' \
---header 'content-type: application/json;charset=UTF-8' \
---header 'pragma: no-cache' \
---data-raw '{"type":"MX","name":"@","cloud":true,"value":{"host":"mail.example.com","priority":"10"},"upstream_https":"default","ip_filter_mode":{"count":"single","geo_filter":"none","order":"none"},"ttl":120}'
-```
 
 خروجی دستور `dig` رکورد MX:
 
